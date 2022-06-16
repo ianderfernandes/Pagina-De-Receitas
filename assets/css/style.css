@@ -1,0 +1,286 @@
+/*INICIO DA ESTITLIZAÇÃO DO CABEÇALHO COMPLETO*/
+.cabecalho {
+    align-items: center;
+    background: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.lista-menu{
+    display: flex;
+}
+
+.item-menu{
+    list-style: none;
+}
+
+.item-menu:last-child .link-menu {
+    margin-right: 0;
+}
+
+.link-menu {
+    color: #808080;
+    margin-right: 1rem;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.link-menu.ativo {
+    color: #333333;
+    font-weight: bold;
+}
+
+.link-menu:hover {
+    text-decoration: underline;
+}
+
+/*CABEÇALHO RESPONSIVO*/
+@media screen and (min-width: 0) {
+    .cabecalho {
+        padding: 0 1rem;
+        justify-content: center;
+    }
+} 
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        padding: 0 3rem;
+        justify-content: space-between;
+    }
+}
+/*FIM DA ESTILIZAÇÃO DO CABEÇALHO*/
+
+/*ESTILIZAÇÃO DO BANNER*/
+.banner {
+    position: relative;
+}
+
+.bannerImagem {
+    width: 100%;
+}
+
+.bannerTitulo {
+    color: #F9F9F9;
+    font-family: Pacifico, cursive;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/*BANNER RESPONSIVO*/
+@media screen and (min-width: 0) {
+    .bannerTitulo {
+        font-size: 2.5rem;
+    }
+
+    .bannerImagem {
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bannerTitulo {
+        font-size: 5rem;
+    }
+
+    .bannerImagem {
+        height: 90vh;
+    }
+}
+/*FIM DA ESTITLIZAÇÃO DO BANNER*/
+
+/*ESTILIZAÇÃO DO SOBRE*/
+.sobre {
+    padding: 2.5rem 0;
+}
+
+.sobreTitulo {
+    color: rgb(173, 27, 27);
+    font-family: Pacifico, cursive;
+    text-align: center;
+}
+
+.sobreDescricao {
+    color: #949494;
+    text-align: center;
+    padding: 0 3em;
+    font-weight: 100;
+}
+
+/*SOBRE RESPONSIVO*/
+@media screen and (min-width: 0) {
+    .sobre {
+        padding: 2.5rem 1rem;
+    }
+
+    .sobreTitulo {
+        font-size: 1.75rem;
+    }
+
+    .sobreDescricao {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sobre {
+        padding: 2.5rem 0;
+    }
+
+    .sobreTitulo {
+        font-size: 3.5rem;
+    }
+
+    .sobreDescricao {
+        font-size: 2rem;
+    }
+}
+/*FIM DA ESTILIZAÇÃO DO SOBRE*/
+
+/*ESTILIZAÇÃO DAS RECEITAS*/
+.receitas {
+    background: #E5E5E5;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.receita {
+    background: #FDFDFD;
+    display: flex;
+    flex-direction: column;
+}
+
+.receitaConteudo {
+    padding: 1rem;
+}
+
+.receitaTitulo {
+    font-size: 18px;
+}
+
+.receitaDescricao {
+    font-weight: 400;
+
+}
+
+.receitaBotao {
+    background: rgb(153, 25, 25);
+    color: #FEFEFE;
+    font-size: 14px;
+    padding: 0.5rem 0.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*RECEITAS RESPONSIVA*/
+@media screen and (min-width: 0) {
+    .receitas {
+        padding: 5rem 0 0 1rem;
+    }
+
+    .receita {
+        margin: 0 1rem 1rem 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .receitas {
+        padding: 5rem 0 0 5rem;
+    }
+
+    .receita {
+        margin: 0 5rem 5rem 0;
+        width: calc(25% - 2.5rem);
+    }
+}
+
+/*FIM DA ESTILIZAÇÃO DAS RECEITAS*/
+
+/*ESTILIZAÇÃO DE QUEM SOMOS*/
+.quemSomos {
+    padding: 2.5rem;
+}
+
+.quemSomosTitulo {
+    color: rgb(173, 27, 27);
+    font-family: Pacifico, cursive;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.quemSomosDescricao {
+    padding: 0.5rem 0 2rem 0;
+    color: #949494;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.pessoas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.quemSomosPessoa {
+    display: flex;
+    flex-direction: column;
+}
+
+.fotoPessoa {
+    border-radius: 50%;
+}
+
+.nomePessoa {
+    color: rgb(173, 27, 27);
+    padding: 1rem 0 0.2rem;
+    font-family: Pacifico, cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.funcaoPessoa {
+    color: #949494;
+    font-weight: 300;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+/*QUEM SOMOS RESPONSIVO*/
+@media screen and (min-width: 0) {
+    .pessoas {
+        flex-direction: column;
+    }
+
+    .quemSomosPessoa {
+        margin: 0 0 1.5rem 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pessoas {
+        flex-direction: row;
+    }
+
+    .quemSomosPessoa {
+        margin: 0;
+    }
+}
+/*FIM DA ESTILIZAÇÃO DE QUEM SOMOS*/
+
+/*ESTILIZAÇÃO DO CONTATO*/
+.rodape {
+    background: #949494;
+    color: #FEFEFE;
+    text-align: right;
+    padding: 1.5rem 2.5rem;
+    text-transform: lowercase;
+} 
